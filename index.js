@@ -36,24 +36,40 @@ const questions = [
     },
     {
         type: 'input',
-        message: 'Provide any useage information.',
-        name: 'usage',
+        message: 'Provide github username.',
+        name: 'username',
     },
     {
         type: 'input',
-        message: 'Provide any useage information.',
-        name: 'usage',
+        message: 'Provide your email address.',
+        name: 'email',
     },
     
 ];
 
 // TODO: Create a function to write README file
 inquirer.prompt(questions)
-function writeToFile(fileName, data) {}
+.then(({title, description, installation, usage, contribution, tests, username, email}) =>
+fs.writeFileSync('README.md', 
+`# ${title}
 
-// TODO: Create a function to initialize app
-function init() {}
-
-generateMarkdown()
-// Function call to initialize app
-init();
+### Description: \n${description}
+ 
+ 
+### Installation Instructions: \n${installation}
+ 
+ 
+### Usage: \n${usage}
+ 
+ 
+### Contributions: \n${contribution}
+ 
+ 
+### Tests: \n${tests}
+ 
+ 
+## Github username: ${username}
+ 
+ 
+## Email: ${email}`, err => err ? console.error(err) : console.log('Success!'))
+)
