@@ -1,26 +1,26 @@
-# Lazy Layover
+# Name of project
 
 ### Description: 
-Gives a user options while stuck on a layover.
+Description of project
  
  
 ### Installation Instructions: 
-Use SSH key to git clone and test the app yourself!
+Instructions for project
  
  
 ### Usage: 
-N/A
+Useage Information
  
  
 ### Contributions: 
-N/A
+Contributions 
  
  
 ### Tests: 
-Make sure you press that link on the homepage before testing.
+Test Instructions
  
  
-## Github username: baylorhinshaw
+## Github username: BH
  
  
-## Email: baylorhinshaw21@gmail.com 
+## Email: BH@gmail.com
